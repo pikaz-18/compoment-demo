@@ -3,7 +3,7 @@
  * @Date: 2020-06-08 17:31:13
  * @LastEditors: zouzheng
  * @LastEditTime: 2020-06-08 17:52:18
- * @Description: 这是XXX组件（页面）
+ * @Description: 这是iframe插件（页面）
 --> 
 <template>
   <div>

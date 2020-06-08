@@ -2,8 +2,8 @@
  * @Author: zouzheng
  * @Date: 2020-06-08 17:30:57
  * @LastEditors: zouzheng
- * @LastEditTime: 2020-06-08 17:52:55
- * @Description: 这是XXX组件（页面）
+ * @LastEditTime: 2020-06-08 18:07:04
+ * @Description: 这是excel导出插件（页面）
 --> 
 <template>
   <div>
