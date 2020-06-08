@@ -2,6 +2,7 @@
   "name": "compoment-demo",
   "version": "0.1.0",
   "private": true,
+  "main": "lib/pikaz-compoment.umd.min.js",
   "scripts": {
     "lib": "vue-cli-service build --target lib --name pikaz-compoment --dest lib src/import.js",
     "serve": "vue-cli-service serve",
