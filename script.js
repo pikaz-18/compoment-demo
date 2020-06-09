@@ -2,12 +2,13 @@
  * @Author: zouzheng
  * @Date: 2020-06-08 17:32:32
  * @LastEditors: zouzheng
- * @LastEditTime: 2020-06-08 17:54:55
+ * @LastEditTime: 2020-06-09 09:50:11
  * @Description: 这是XXX组件（页面）
  */
 const fs = require('fs');
 const path = require('path');
 
+// 生成导出文件
 fs.readdir(path.join(__dirname, './src/components'), function (err, files) {
   if (err) {
     return console.log('目录不存在')
@@ -29,3 +30,11 @@ fs.readdir(path.join(__dirname, './src/components'), function (err, files) {
     if (err) throw err;
   });
 })
+
+// 修改版本号
+// fs.readdir(path.join(__dirname, './package'), function (err, files) {
+//   if (err) {
+//     return console.log('package不存在')
+//   }
+//   console.log(files)
+// })
