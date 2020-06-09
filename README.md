@@ -1,19 +1,35 @@
-# projectcompoment
+<!--
+ * @Author: zouzheng
+ * @Date: 2020-06-08 17:13:20
+ * @LastEditors: zouzheng
+ * @LastEditTime: 2020-06-09 10:31:08
+ * @Description: 这是XXX组件（页面）
+--> 
+## 多项目共用组件demo
 
-## Project setup
-```
-npm install
-```
+### 打包
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
+```bash
+npm run lib
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### 生成导出文件
+node script.js
+
+### 提交git
+
+第一次git
+```bash
+git init
+git add .
+git commit -m "commit"
+git remote add origin https://github.com/pikaz-18/test.git
+git push -u origin master
+```
+
+之后提交git，只需写在package.json中的命令中即可
+```js
+"scripts": {
+  "push": "node script.js && npm run lib && git add . && git commit -m 'commit' && git push"
+  }
+```
