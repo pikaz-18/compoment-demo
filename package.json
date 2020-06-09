@@ -4,7 +4,7 @@
   "private": true,
   "main": "lib/pikaz-compoment.umd.min.js",
   "scripts": {
-    "lib": "vue-cli-service build --target lib --name pikaz-compoment --dest lib src/import.js",
+    "lib": "vue-cli-service build --target lib --name pikaz-compoment --dest lib src/index.js",
     "serve": "vue-cli-service serve",
     "push": "node script.js && npm run lib && git add . && git commit -m 'commit' && git push"
   },

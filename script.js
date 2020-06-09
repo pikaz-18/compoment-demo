@@ -2,7 +2,7 @@
  * @Author: zouzheng
  * @Date: 2020-06-08 17:32:32
  * @LastEditors: zouzheng
- * @LastEditTime: 2020-06-09 09:50:11
+ * @LastEditTime: 2020-06-09 09:58:48
  * @Description: 这是XXX组件（页面）
  */
 const fs = require('fs');
@@ -26,7 +26,7 @@ fs.readdir(path.join(__dirname, './src/components'), function (err, files) {
   ex = ex.join(",")
   content = content + `export { ${ex} }; `
 
-  fs.writeFile(path.join(__dirname, './src/import.js'), content, 'utf8', (err) => {
+  fs.writeFile(path.join(__dirname, './src/index.js'), content, 'utf8', (err) => {
     if (err) throw err;
   });
 })
