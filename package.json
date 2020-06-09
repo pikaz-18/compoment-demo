@@ -10,6 +10,8 @@
   },
   "dependencies": {
     "core-js": "^3.6.5",
+    "pikaz-excel-js": "^0.2.11",
+    "pikaz-iframe": "^0.1.8",
     "vue": "^2.6.11"
   },
   "devDependencies": {
