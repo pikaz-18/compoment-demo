@@ -2,10 +2,10 @@
  * @Author: zouzheng
  * @Date: 2020-06-08 17:13:20
  * @LastEditors: zouzheng
- * @LastEditTime: 2020-06-09 10:31:08
+ * @LastEditTime: 2020-06-09 10:35:19
  * @Description: 这是XXX组件（页面）
 --> 
-## 多项目共用组件demo
+## 多项目共用组件demo-组件
 
 ### 打包
 
@@ -18,7 +18,7 @@ node script.js
 
 ### 提交git
 
-第一次git
+第一次提交git
 ```bash
 git init
 git add .
