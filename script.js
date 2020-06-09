@@ -2,8 +2,8 @@
  * @Author: zouzheng
  * @Date: 2020-06-08 17:32:32
  * @LastEditors: zouzheng
- * @LastEditTime: 2020-06-09 09:58:48
- * @Description: 这是XXX组件（页面）
+ * @LastEditTime: 2020-06-09 13:59:18
+ * @Description: 这是写入导出文件组件（页面）
  */
 const fs = require('fs');
 const path = require('path');
@@ -19,9 +19,8 @@ fs.readdir(path.join(__dirname, './src/components'), function (err, files) {
   // 处理导出代码
   files.forEach(item => {
     // 读取目录名
-    const name = item.replace(".vue", "")
-    content = content + `import ${name} from './components/${name}';`
-    ex.push(name)
+    content = content + `import ${item} from './components/${item}';`
+    ex.push(item)
   })
   ex = ex.join(",")
   content = content + `export { ${ex} }; `
@@ -30,11 +29,3 @@ fs.readdir(path.join(__dirname, './src/components'), function (err, files) {
     if (err) throw err;
   });
 })
-
-// 修改版本号
-// fs.readdir(path.join(__dirname, './package'), function (err, files) {
-//   if (err) {
-//     return console.log('package不存在')
-//   }
-//   console.log(files)
-// })
