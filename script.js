@@ -2,7 +2,7 @@
  * @Author: zouzheng
  * @Date: 2020-06-08 17:32:32
  * @LastEditors: zouzheng
- * @LastEditTime: 2020-06-09 13:59:18
+ * @LastEditTime: 2020-06-09 14:04:26
  * @Description: 这是写入导出文件组件（页面）
  */
 const fs = require('fs');
@@ -13,7 +13,7 @@ fs.readdir(path.join(__dirname, './src/components'), function (err, files) {
   if (err) {
     return console.log('目录不存在')
   }
-  // 设置时间戳以提交git
+  // 设置时间以提交git
   let content = `/*${new Date()}*/`
   let ex = []
   // 处理导出代码
