@@ -2,13 +2,14 @@
  * @Author: zouzheng
  * @Date: 2020-06-08 17:31:13
  * @LastEditors: zouzheng
- * @LastEditTime: 2020-06-09 09:46:06
+ * @LastEditTime: 2020-06-09 10:05:23
  * @Description: 这是iframe插件（页面）
 --> 
 <template>
   <div class="demo">
     <pikaz-iframe :setting="setting">
     </pikaz-iframe>
+    <div>{{setting.src}}</div>
   </div>
 </template>
 
