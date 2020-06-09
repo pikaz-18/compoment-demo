@@ -2,7 +2,7 @@
  * @Author: zouzheng
  * @Date: 2020-06-08 17:31:13
  * @LastEditors: zouzheng
- * @LastEditTime: 2020-06-09 09:23:33
+ * @LastEditTime: 2020-06-09 09:46:06
  * @Description: 这是iframe插件（页面）
 --> 
 <template>
@@ -13,9 +13,10 @@
 </template>
 
 <script>
+import { PikazIframe } from 'pikaz-iframe'
 export default {
   props: {},
-  components: {},
+  components: { PikazIframe },
   data () {
     return {
       setting: {
