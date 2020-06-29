@@ -33,3 +33,5 @@ git push -u origin master
   "push": "node script.js && npm run lib && git add . && git commit -m 'commit' && git push"
   }
 ```
+
+项目说明文章：[https://juejin.im/post/5edf2f55f265da76cb3bfa81](https://juejin.im/post/5edf2f55f265da76cb3bfa81)
