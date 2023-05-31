@@ -20,7 +20,7 @@ export default {
   data () {
     return {
       setting: {
-        src: "https://m.baidu.com/"
+        src: "https://m.baidu.com/hualc"
       }
     }
   },
